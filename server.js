@@ -10,6 +10,10 @@ app.get("/about",(req,res)=>{
     res.send("<h1>About us </h1>");
 })
 
+app.get("/freq",(req,res)=>{
+    res.send("squared_frequency ical as squared");
+})
+
 app.get("/contact",(req,res)=>{
     res.send("<h1> contact me @ himanshu.chauhan@codepanda.in</h1>");
 })
@@ -20,7 +24,7 @@ app.get("/gallery",(req,res)=>{
 
 
 app.use((req,res)=>{
-    res.status(503).send("<h1> page not found </h1>")
+    res.status(404).send("<h1> page not found </h1>")
 })
 
 
