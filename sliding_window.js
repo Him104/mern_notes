@@ -10,16 +10,20 @@ return null;
         let temp = 0;
         for (let j = index; j < index+n; j++) {
         temp += arr[j];
+
+        // console.log(temp);
             
         }
         if (temp>max) {
             max = temp;
+
+            console.log(max);
             
         }
         
     }
 
-    return max;
+    return "the max sum of the sliding sub array is " + max;
 
 
     
