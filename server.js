@@ -10,6 +10,10 @@ app.get("/about",(req,res)=>{
     res.send("<h1>About us </h1>");
 })
 
+app.post("/", function(req,res){
+    res.send("welcome to the online calculator");
+});
+
 app.get("/freq",(req,res)=>{
     res.send("squared_frequency ical as squared");
 })
