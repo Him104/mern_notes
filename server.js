@@ -33,7 +33,7 @@ app.use((req,res)=>{
 
 
 app.listen(8000, function(){
-
+console.log("hey there , It;s me --- server, I am up and running....")
    
     console.log("server is up and running on port 8000");
 

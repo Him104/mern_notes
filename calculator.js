@@ -10,17 +10,16 @@ app.get("/",function(req,res){
     res.sendFile(__dirname + "/index.html");
 })
 
-app.post("/", function (req, res) {
+app.post("/", (req,res)=>{
 
-    console.log(req.body);
+   let  num1 = Number(req.body.n1);
+   let num2 = Number(req.body.n2);
+let result = num1 + num2;
 
-num1 = Number(req.body.num1);
-num2 = Number(req.body.num2);
+console.log(result);
 
-var output = num1 + num2;
+res.send("the result of the calculation "+ result);
 
-res.send("the result of the calculation " + output);
-    
 })
 
 app.listen(8000, function(){
