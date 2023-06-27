@@ -9,7 +9,7 @@ let pivot = arr[arr.length-1]
 let left = [];
 let right = [];
 
-    for (let index = 0; index < arr.length; index++) {
+    for (let index = 0; index < arr.length-1; index++) {
         if (arr[index]<pivot) {
             left.push(arr[index])
             
