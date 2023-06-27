@@ -1,14 +1,13 @@
-import express from 'express';
-
-const bodyParser = require("body-parser");
+const express = require ('express') ;
+const bodyParser = require ('body-parser';
 
 const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/",function(req,res){
-    res.sendFile(__dirname + "/index.html");
-})
+    res.sendFile(__dirname + "index3.html");
+});
 
 app.post("/", (req,res)=>{
 
@@ -20,8 +19,8 @@ console.log(result);
 
 res.send("the result of the calculation "+ result);
 
-})
+});
 
-app.listen(8000, function(){
-    console.log("server is running on port 8000");
-})
+app.listen(4000, function(){
+    console.log("server is running on port 4000");
+}); 

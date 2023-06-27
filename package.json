@@ -2,7 +2,7 @@
   "name": "dom",
   "version": "1.0.0",
   "description": "learning node",
-  "main": "server.js",
+  "exports": "./calculator.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon -L server.js",
