@@ -8,17 +8,15 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.get("/",function(req,res){
-    res.sendFile(__dirname + "index3.html");
+app.get("/index3",function(req,res){
+    res.sendFile(__dirname + "/index3.html");
 });
 
-app.post("/", (req,res)=>{
+app.post("/index3", (req,res)=>{
 
-   let  num1 = Number(req.body.n1);
-   let num2 = Number(req.body.n2);
-let result = num1 + num2;
-
-console.log(result);
+   let  n1 = Number(req.body.n1);
+   let n2 = Number(req.body.n2);
+let result = n1 + n2;
 
 res.send("the result of the calculation "+ result);
 
