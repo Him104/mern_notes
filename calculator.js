@@ -26,6 +26,11 @@ app.get("/bmi",function(req,res){
     res.sendFile(__dirname + "/bmi.html");
 })
 
+app.get("/temp",function(req,res){
+    res.send("the temperature of noida is 27 degree celcius");
+})
+
+
 app.post("/bmi",function(req,res){
     let  weight = Number(req.body.weight);
     let height = Number(req.body.height);
